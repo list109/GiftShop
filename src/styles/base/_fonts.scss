@@ -13,12 +13,22 @@
 @font-face {
     font-family: 'Aparajita';
     src: url('../../fonts/aparajita/aparajita-webfont.eot');
-    src: url('./../fonts/aparajita/aparajita-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./../fonts/aparajita/aparajita-webfont.woff2') format('woff2'),
-         url('./../fonts/aparajita/aparajita-webfont.woff') format('woff'),
-         url('./../fonts/aparajita/aparajita-webfont.ttf') format('truetype'),
-         url('./../fonts/aparajita/aparajita-webfont.svg#aparajitaregular') format('svg');
+    src: url('../../fonts/aparajita/aparajita-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/aparajita/aparajita-webfont.woff2') format('woff2'),
+         url('../../fonts/aparajita/aparajita-webfont.woff') format('woff'),
+         url('../../fonts/aparajita/aparajita-webfont.ttf') format('truetype'),
+         url('../../fonts/aparajita/aparajita-webfont.svg#aparajitaregular') format('svg');
     font-weight: 400;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../../fonts/myriad_pro/MyriadPro-Regular.eot');
+    src: url('../../fonts/myriad_pro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/myriad_pro/MyriadPro-Regular.woff2') format('woff2'),
+         url('../../fonts/myriad_pro/MyriadPro-Regular.woff') format('woff'),
+         url('../../fonts/myriad_pro/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }

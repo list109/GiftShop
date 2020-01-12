@@ -1,34 +1,1031 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GiftShop</title>
-        <meta name="theme-color" content="#fff">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="../img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="../img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="../img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="../styles/main.css">
-    </head>
-    <body>
-        @@include("../blocks/modules/header/header.html")
-        @@include("../blocks/modules/footer/footer.html")
-        <script src="../js/main.js"></script>
-        <script src="../js/vendor.js"></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GiftShop</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="../img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="../img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://kit.fontawesome.com/544c409c65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    @@include("../blocks/modules/header/header.html")
+    @@include("../blocks/modules/footer/footer.html")
+
+    <header>
+        <div class="header">
+            <a href="##" class="logo"></a>
+            <div class="header-menu">
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item"><a href="##">Sell</a></li>
+                        <li class="header-nav__item"><a href="##">Registry</a></li>
+                        <li class="header-nav__item"><a href="##">Community</a></li>
+                        <li class="header-nav__item"><a href="##">Blogs</a></li>
+                        <li class="header-nav__item"><a href="##">Mobile</a></li>
+                        <li class="header-nav__item"><a href="##">Gift Cards</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <ul class="header-actions__list">
+                        <li class="header-actions__item"><a href="##" class="header-actions__link">Register</a></li>
+                        <li class="header-actions__item header-actions__item_warn"><a href="##"
+                                class="header-actions__link">Sign In</a></li>
+                        <li class="header-actions__item"><a href="##"
+                                class="header-actions__link header-actions__link_larger">Whislost<span
+                                    class="header-actions__present icon icon_present"></span></a></li>
+                        <li class="header-actions__item header-actions__item_warn"><a href="##"
+                                class="header-actions__link header-actions__link_larger">Cart<span
+                                    class="header-actions__cart header-actions__icon icon icon_cart"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="products">
+        <div class="wrap">
+            <ul id="products_list" class="products-list">
+                <li class="products-list__item"><a href="##" class="products-list__link">Art</a>
+                    <ul class="products-sublist">
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <a href="##" class="products-content__more" title="See more">See All Items</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="products-list__item"><a href="##" class="products-list__link">Home & Living</a>
+                    <ul class="products-sublist">
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <a href="##" class="products-content__more" title="See more">See All Items</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="products-list__item"><a href="##" class="products-list__link">Jewelry</a>
+                    <ul class="products-sublist">
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <a href="##" class="products-content__more" title="See more">See All Items</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="products-list__item"><a href="##" class="products-list__link">Women</a>
+                    <ul class="products-sublist">
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <a href="##" class="products-content__more" title="See more">See All Items</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="products-list__item"><a href="##" class="products-list__link">Men</a>
+                    <ul class="products-sublist">
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <a href="##" class="products-content__more" title="See more">See All Items</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="products-list__item"><a href="##" class="products-list__link">Kids</a>
+                    <ul class="products-sublist">
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <a href="##" class="products-content__more" title="See more">See All Items</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="products-list__item"><a href="##" class="products-list__link">Vintage</a>
+                    <ul class="products-sublist">
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <a href="##" class="products-content__more" title="See more">See All Items</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="products-list__item"><a href="##" class="products-list__link">Weddings</a>
+                    <ul class="products-sublist">
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <a href="##" class="products-content__more" title="See more">See All Items</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="products-list__item"><a href="##" class="products-list__link">More</a>
+                    <ul class="products-sublist">
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <div class="products-content">
+                                <div class="products-content__image">
+                                    <img src="../img/menu-item-image.png" alt="image of products">
+                                </div>
+                                <div class="products-content__text">
+                                    <h4>Item Name Here</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the</p>
+                                    <a href="##" class="products-content__link">More Detail</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-sublist__item">
+                            <a href="##" class="products-content__more" title="See more">See All Items</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="presentation">
+        <div class="wrap ">
+            <div class="presentation-grid">
+                <div class="men presentation-grid__item">
+                    <a href="##" class="presentation-grid__link" title="Men's wear"></a>
+                    <div class="presentation-text men__text">
+                        <div class="presentation-text-box men__box">
+                            <h2 class="presentation-text-box__title men__title">Men's wear</h2>
+                            <p class="presentation-text-box__desc men__desc">Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. Lorem</p>
+                        </div>
+                        <p class="presentation-text-info">Lorem Ipsum is simply dummy text</p>
+                    </div>
+                </div>
+                <div class="women presentation-grid__item">
+                    <a href="##" class="presentation-grid__link" title="Women's wear"></a>
+                    <div class="presentation-text women__text">
+                        <div class="presentation-text-box women__box">
+                            <h2 class="presentation-text-box__title women__title">Women's wear</h2>
+                            <p class="presentation-text-box__desc women__desc">Lorem Ipsum is simply dummy text
+                                of the printing and typesetting</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="children presentation-grid__item">
+                    <a href="##" class="presentation-grid__link"></a>
+                    <div class="purchase children__purchase">
+                        <div class="purchase-title"><a href="##" data-tip="to baby shop">Baby Shop</a></div>
+                        <div class="purchase-present"><a href="##" data-tip="present to someone"><span
+                                    class="icon icon_present"></span></a></div>
+                        <div class="purchase-cart"><a href="##" data-tip="add to cart"><span
+                                    class="icon icon_cart"></span></a></div>
+                        <div class="purchase-price"><span>$</span> 99.<sup>00</sup></div>
+                    </div>
+                </div>
+                <div id="searchElem" class="search presentation-grid__item">
+                    <form class="search-form" action="##" method="get" name="search">
+                        <label class="search-form__input">
+                            <input type="text" id="input">
+                            <div id="placeholder">Search your product here <span>( e.g.: Silver diamond ring )</span>
+                            </div>
+                        </label>
+                        <button id="formBtn" class="btn search-form__btn"></button>
+                    </form>
+                </div>
+                <div class="jewelry presentation-grid__item">
+                    <a href="##" class="presentation-grid__link"></a>
+                    <div class="presentation-text jewelry__text">
+                        <div class="presentation-text-box jewelry__box">
+                            <h2 class="presentation-grid__title jewelry__title">Jewelry</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="crafts presentation-grid__item">
+                    <a href="##" class="presentation-grid__link"></a>
+                    <div class="purchase crafts__purchase">
+                        <div class="purchase-title crafts__title"><a href="##" data-tip="to crafts shop">Crafts</a>
+                        </div>
+                        <div class="purchase-present crafts__present"><a href="##" data-tip="present to someone"><span
+                                    class="icon icon_present"></span></a></div>
+                        <div class="purchase-cart crafts__cart"><a href="##" data-tip="add to cart"><span
+                                    class="icon icon_cart"></span></a>
+                        </div>
+                        <div class="purchase-price crafts__price"><span>$</span> 99.<sup>00</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="new">
+        <div class="wrap">
+            <section class="new-box block">
+                <h2 class="block__title">New Products</h2>
+                <div class="block-carousel new-carousel">
+                    <div class="block-carousel__item">
+                        <div class="new-product new-product_bag">
+                            <div class="purchase new-product__purchase">
+                                <div class="purchase-title"><a href="##" data-tip="to bag section">Bag</a></div>
+                                <div class="purchase-present"><a href="##" data-tip="present to someone"><span
+                                            class="icon icon_present"></span></a></div>
+                                <div class="purchase-cart"><a href="##" data-tip="add to cart"><span
+                                            class="icon icon_cart"></span></a></div>
+                                <div class="purchase-price">$ 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-carousel__item">
+                        <div class="new-product new-product_jewelry">
+                            <div class="purchase new-product__purchase">
+                                <div class="purchase-title"><a href="##" data-tip="to crafts section">Crafts</a></div>
+                                <div class="purchase-present"><a href="##" data-tip="present to someone"><span
+                                            class="icon icon_present"></span></a></div>
+                                <div class="purchase-cart"><a href="##" data-tip="add to cart"><span
+                                            class="icon icon_cart"></span></a></div>
+                                <div class="purchase-price">$ 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-carousel__item">
+                        <div class="new-product new-product_watches">
+                            <div class="purchase new-product__purchase">
+                                <div class="purchase-title"><a href="##" data-tip="to jewelry section">Jewelry</a></div>
+                                <div class="purchase-present"><a href="##" data-tip="present to someone"><span
+                                            class="icon icon_present"></span></a></div>
+                                <div class="purchase-cart"><a href="##" data-tip="add to cart"><span
+                                            class="icon icon_cart"></span></a></div>
+                                <div class="purchase-price">$ 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-carousel__item">
+                        <div class="new-product new-product_bag">
+                            <div class="purchase new-product__purchase">
+                                <div class="purchase-title"><a href="##" data-tip="to bag section">Bag</a></div>
+                                <div class="purchase-present"><a href="##" data-tip="present to someone"><span
+                                            class="icon icon_present"></span></a></div>
+                                <div class="purchase-cart"><a href="##" data-tip="add to cart"><span
+                                            class="icon icon_cart"></span></a></div>
+                                <div class="purchase-price">$ 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-carousel__item">
+                        <div class="new-product new-product_jewelry">
+                            <div class="purchase new-product__purchase">
+                                <div class="purchase-title"><a href="##" data-tip="to crafts section">Crafts</a></div>
+                                <div class="purchase-present"><a href="##" data-tip="present to someone"><span
+                                            class="icon icon_present"></span></a></div>
+                                <div class="purchase-cart"><a href="##" data-tip="add to cart"><span
+                                            class="icon icon_cart"></span></a></div>
+                                <div class="purchase-price">$ 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-carousel__item">
+                        <div class="new-product new-product_watches">
+                            <div class="purchase new-product__purchase">
+                                <div class="purchase-title"><a href="##" data-tip="to jewelry section">Jewelry</a></div>
+                                <div class="purchase-present"><a href="##" data-tip="present to someone"><span
+                                            class="icon icon_present"></span></a></div>
+                                <div class="purchase-cart"><a href="##" data-tip="add to cart"><span
+                                            class="icon icon_cart"></span></a></div>
+                                <div class="purchase-price">$ 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="arrows" class="block-arrows new-box__arrows">
+                    <button class="block-arrows__btn block-arrows__btn_prev new-box__arrow"></button>
+                    <button class="block-arrows__btn block-arrows__btn_next new-box__arrow"></button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="offerings">
+        <div class="wrap">
+            <section class="offerings-box block">
+                <h2 class="block__title">Featured Products</h2>
+                <div class="block-carousel offerings-carousel">
+                    <div class="block-carousel__item">
+                        <div class="block-offering">
+                            <div class="block-offering__photo">
+                                <img src="../img/showing1.jpg" alt="garment showing">
+                                <span class="block-offering__info block-offering__info_warn">20% OFF</span>
+                            </div>
+                            <div class="block-offering__text">
+                                <h3 class="block-offering__title">Product Title here</h3>
+                                <p class="block-offering__desc">Short Description here</p>
+                            </div>
+                            <div class="block-offering__purchase">
+                                <div class="block-offering__chainging"><a href="##" data-tip="change product"
+                                        class="block-offering__link"><span class="icon icon_offeringChange"></span></a>
+                                </div>
+                                <div class="block-offering__present"><a href="##" data-tip="present to someone"
+                                        class="block-offering__link"><span class="icon icon_offeringPresent"></span></a>
+                                </div>
+                                <div class="block-offering__cart"><a href="##" data-tip="add to cart"
+                                        class="block-offering__link"><span class="icon icon_offeringCart"></span></a></div>
+                                <div class="block-offering__price purchase-price"><span>$</span> 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-carousel__item">
+                        <div class="block-offering">
+                            <div class="block-offering__photo">
+                                <img src="../img/showing2.jpg" alt="garment showing">
+                            </div>
+                            <div class="block-offering__text">
+                                <h3 class="block-offering__title">Product Title here</h3>
+                                <p class="block-offering__desc">Short Description here</p>
+                            </div>
+                            <div class="block-offering__purchase">
+                                <div class="block-offering__chainging"><a href="##" data-tip="change product"
+                                        class="block-offering__link"><span class="icon icon_offeringChange"></span></a>
+                                </div>
+                                <div class="block-offering__present"><a href="##" data-tip="present to someone"
+                                        class="block-offering__link"><span class="icon icon_offeringPresent"></span></a>
+                                </div>
+                                <div class="block-offering__cart"><a href="##" data-tip="add to cart"
+                                        class="block-offering__link"><span class="icon icon_offeringCart"></span></a></div>
+                                <div class="block-offering__price purchase-price"><span>$</span> 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-carousel__item">
+                        <div class="block-offering">
+                            <div class="block-offering__photo">
+                                <img src="../img/showing3.jpg" alt="garment showing">
+                                <span class="block-offering__info block-offering__info_new">New</span>
+                            </div>
+                            <div class="block-offering__text">
+                                <h3 class="block-offering__title">Product Title here</h3>
+                                <p class="block-offering__desc">Short Description here</p>
+                            </div>
+                            <div class="block-offering__purchase">
+                                <div class="block-offering__chainging"><a href="##" data-tip="change product"
+                                        class="block-offering__link"><span class="icon icon_offeringChange"></span></a>
+                                </div>
+                                <div class="block-offering__present"><a href="##" data-tip="present to someone"
+                                        class="block-offering__link"><span class="icon icon_offeringPresent"></span></a>
+                                </div>
+                                <div class="block-offering__cart"><a href="##" data-tip="add to cart"
+                                        class="block-offering__link"><span class="icon icon_offeringCart"></span></a></div>
+                                <div class="block-offering__price purchase-price news"><span>$</span> 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-carousel__item">
+                        <div class="block-offering">
+                            <div class="block-offering__photo">
+                                <img src="../img/showing4.jpg" alt="garment showing">
+                            </div>
+                            <div class="block-offering__text">
+                                <h3 class="block-offering__title">Product Title here</h3>
+                                <p class="block-offering__desc">Short Description here</p>
+                            </div>
+                            <div class="block-offering__purchase">
+                                <div class="block-offering__chainging"><a href="##" data-tip="change product"
+                                        class="block-offering__link"><span class="icon icon_offeringChange"></span></a>
+                                </div>
+                                <div class="block-offering__present"><a href="##" data-tip="present to someone"
+                                        class="block-offering__link"><span class="icon icon_offeringPresent"></span></a>
+                                </div>
+                                <div class="block-offering__cart"><a href="##" data-tip="add to cart"
+                                        class="block-offering__link"><span class="icon icon_offeringCart"></span></a></div>
+                                <div class="block-offering__price purchase-price"><span>$</span> 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-carousel__item">
+                        <div class="block-offering">
+                            <div class="block-offering__photo">
+                                <img src="../img/showing1.jpg" alt="garment showing">
+                                <span class="block-offering__info block-offering__info_warn">20% OFF</span>
+                            </div>
+                            <div class="block-offering__text">
+                                <h3 class="block-offering__title">Product Title here</h3>
+                                <p class="block-offering__desc">Short Description here</p>
+                            </div>
+                            <div class="block-offering__purchase">
+                                <div class="block-offering__chainging"><a href="##" data-tip="change product"
+                                        class="block-offering__link"><span class="icon icon_offeringChange"></span></a>
+                                </div>
+                                <div class="block-offering__present"><a href="##" data-tip="present to someone"
+                                        class="block-offering__link"><span class="icon icon_offeringPresent"></span></a>
+                                </div>
+                                <div class="block-offering__cart"><a href="##" data-tip="add to cart"
+                                        class="block-offering__link"><span class="icon icon_offeringCart"></span></a></div>
+                                <div class="block-offering__price purchase-price"><span>$</span> 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-carousel__item">
+                        <div class="block-offering">
+                            <div class="block-offering__photo">
+                                <img src="../img/showing2.jpg" alt="garment showing">
+                            </div>
+                            <div class="block-offering__text">
+                                <h3 class="block-offering__title">Product Title here</h3>
+                                <p class="block-offering__desc">Short Description here</p>
+                            </div>
+                            <div class="block-offering__purchase">
+                                <div class="block-offering__chainging"><a href="##" data-tip="change product"
+                                        class="block-offering__link"><span class="icon icon_offeringChange"></span></a>
+                                </div>
+                                <div class="block-offering__present"><a href="##" data-tip="present to someone"
+                                        class="block-offering__link"><span class="icon icon_offeringPresent"></span></a>
+                                </div>
+                                <div class="block-offering__cart"><a href="##" data-tip="add to cart"
+                                        class="block-offering__link"><span class="icon icon_offeringCart"></span></a></div>
+                                <div class="block-offering__price purchase-price"><span>$</span> 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-carousel__item">
+                        <div class="block-offering">
+                            <div class="block-offering__photo">
+                                <img src="../img/showing3.jpg" alt="garment showing">
+                                <span class="block-offering__info block-offering__info_new">New</span>
+                            </div>
+                            <div class="block-offering__text">
+                                <h3 class="block-offering__title">Product Title here</h3>
+                                <p class="block-offering__desc">Short Description here</p>
+                            </div>
+                            <div class="block-offering__purchase">
+                                <div class="block-offering__chainging"><a href="##" data-tip="change product"
+                                        class="block-offering__link"><span class="icon icon_offeringChange"></span></a>
+                                </div>
+                                <div class="block-offering__present"><a href="##" data-tip="present to someone"
+                                        class="block-offering__link"><span class="icon icon_offeringPresent"></span></a>
+                                </div>
+                                <div class="block-offering__cart"><a href="##" data-tip="add to cart"
+                                        class="block-offering__link"><span class="icon icon_offeringCart"></span></a></div>
+                                <div class="block-offering__price purchase-price news"><span>$</span> 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-carousel__item">
+                        <div class="block-offering">
+                            <div class="block-offering__photo">
+                                <img src="../img/showing4.jpg" alt="garment showing">
+                            </div>
+                            <div class="block-offering__text">
+                                <h3 class="block-offering__title">Product Title here</h3>
+                                <p class="block-offering__desc">Short Description here</p>
+                            </div>
+                            <div class="block-offering__purchase">
+                                <div class="block-offering__chainging"><a href="##" data-tip="change product"
+                                        class="block-offering__link"><span class="icon icon_offeringChange"></span></a>
+                                </div>
+                                <div class="block-offering__present"><a href="##" data-tip="present to someone"
+                                        class="block-offering__link"><span class="icon icon_offeringPresent"></span></a>
+                                </div>
+                                <div class="block-offering__cart"><a href="##" data-tip="add to cart"
+                                        class="block-offering__link"><span class="icon icon_offeringCart"></span></a></div>
+                                <div class="block-offering__price purchase-price"><span>$</span> 99.<sup>00</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="arrows" class="block-arrows offerings-box__arrows">
+                    <button class="block-arrows__btn block-arrows__btn_prev offerings-box__arrow"></button>
+                    <button class="block-arrows__btn block-arrows__btn_next offerings-box__arrow"></button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="about block">
+        <div class="wrap">
+            <h2 class="block__title about__title">Who We Are</h2>
+            <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="block-actions">
+                <a class="block-actions__item block-actions__item_catalog">
+                    <img src="../img/chose.png" alt="Chose products">
+                    <h3 class="block-actions__title">Chose Products</h3>
+                </a>
+                <a class="block-actions__item block-actions__item_authorisation">
+                    <img src="../img/register.png" alt="Зарегистрироваться">
+                    <h3 class="block-actions__title">Register/ Login</h3>
+                </a>
+                <a class="block-actions__item block-actions__item_checkout">
+                    <img src="../img/checkout.png" alt="Оплата">
+                    <h3 class="block-actions__title">Checkout</h3>
+                </a>
+            </div>
+            <a href="##" class="btn btn_success about__btn">Register Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-menu">
+                <div class="footer-menu__item footer-menu__item_list">
+                    <h3 class="footer-menu__title">Shopping with us</h3>
+                    <ul class="footer-list">
+                        <li><a href="##">why shop with us?</a></li>
+                        <li><a href="##">how it works</a></li>
+                        <li><a href="##">delivery</a></li>
+                        <li><a href="##">returns</a></li>
+                        <li><a href="##">where's my order</a></li>
+                        <li><a href="##">contact & help</a></li>
+                        <li><a href="##">wedding list</a></li>
+                        <li><a href="##">wish lists</a></li>
+                        <li><a href="##">gift vouchers</a></li>
+                    </ul class="footer-list">
+                </div>
+                <div class="footer-menu__item footer-menu__item_list">
+                    <h3 class="footer-menu__title">About us</h3>
+                    <ul class="footer-list">
+                        <li><a href="##">our story</a></li>
+                        <li><a href="##">customer contact</a></li>
+                        <li><a href="##">awards</a></li>
+                        <li><a href="##">press centre</a></li>
+                        <li><a href="##">work with us</a></li>
+                        <li><a href="##">terms & conditions</a></li>
+                        <li><a href="##">privacy & cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu__item footer-menu__item_list">
+                    <h3 class="footer-menu__title">Selling with us</h3>
+                    <ul class="footer-list">
+                        <li><a href="##">why join?</a></li>
+                        <li><a href="##">faqs</a></li>
+                        <li><a href="##">apply to sell with us</a></li>
+                        <li><a href="##">affiliates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu__item footer-menu__item_lager">
+                    <div class="footer-menu__form">
+                        <h3 class="footer-menu__title">Signup newsletter</h3>
+                        <div class="footer-letter" role="form">
+                            <input type="text" class="footer-letter__input" placeholder="e.g.: abc@domain.com">
+                            <button class="footer-letter__btn btn btn_success">Subscribe now</button>
+                        </div>
+                    </div>
+                    <div class="footer-menu__social">
+                        <h3 class="footer-menu__title footer-menu__title_social">Keep in touch</h3>
+                        <ul class="footer-social">
+                            <li class="footer-social__item"><a href="##"
+                                    class="footer-social__link footer-social__link_rss"><i class="fas fa-rss"></i></a>
+                            </li>
+                            <li class="footer-social__item"><a href="##"
+                                    class="footer-social__link footer-social__link_facebook"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li class="footer-social__item"><a href="##"
+                                    class="footer-social__link footer-social__link_twit"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li class="footer-social__item"><a href="##"
+                                    class="footer-social__link footer-social__link_pay"><span
+                                        class="icon icon_pay"></span></a></li>
+                            <li class="footer-social__item"><a href="##"
+                                    class="footer-social__link footer-social__link_google"><span
+                                        class="icon icon_google"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-desc">
+                <p class="footer-desc__right">Copyright © 2014 Gift Shop, All right reserved</p>
+                <p class="footer-desc__autor">Designed by <a href="##">Amysxain</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="../js/main.js"></script>
+    <script src="../js/vendor.js"></script> -->
+    <script>
+        $(document).ready(function () {
+
+            input.onchange = event => {
+                placeholder.hidden = Boolean(input.value);
+            }
+
+            formBtn.onmouseover = event => {
+                searchElem.classList.add('active');
+            }
+
+            formBtn.onmouseout = event => {
+                searchElem.classList.remove('active');
+            }
+
+            $('.new .block-carousel').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                variableWidth: true,
+                centerMode: true,
+                prevArrow: '.new .block-arrows__btn_prev',
+                nextArrow: '.new .block-arrows__btn_next',
+                responsive: [
+                    {
+                        breakpoint: 1230,
+                        settings: {
+                            variableWidth: false,
+                            centerMode: true,
+                        }
+                    },{
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 620,
+                        settings: {
+                            variableWidth: false,
+                            centerMode: false,
+                            slidesToShow: 1,
+                        }
+                    },
+
+                ]
+            });
+
+            $('.offerings .block-carousel').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                variableWidth: true,
+                prevArrow: '.offerings .block-arrows__btn_prev',
+                nextArrow: '.offerings .block-arrows__btn_next',
+                responsive: [
+                    {
+                        breakpoint: 1230,
+                        settings: {
+                            variableWidth: false,
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            variableWidth: false,
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 620,
+                        settings: {
+                            variableWidth: false,
+                            slidesToShow: 1,
+                        }
+                    }
+
+                ]
+            });
+
+            let tipMethods = {
+                handleEvent(event) {
+                    let elem = event.target.closest('[data-tip]');
+                    if (!elem || elem.dataset.tip == null) return;
+                    this.elem = elem;
+                    this[`${event.type}Tip`](event);
+                },
+                mouseoverTip(event) {
+                    let tip = document.createElement('div');
+                    let coords = this.elem.getBoundingClientRect();
+                    tip.textContent = this.elem.dataset.tip;
+                    document.body.append(tip);
+                    tip.classList.add('tip');
+                    tip.style.top = pageYOffset + coords.top - tip.offsetHeight - 2 + 'px';
+                    let left = pageXOffset + coords.left + this.elem.offsetWidth / 2 - tip.offsetWidth / 2;
+                    tip.style.left = (left >= 0) ? left + 'px' : 0 + 'px';
+
+                    this.tip = tip;
+                },
+                mouseoutTip(event) {
+                    this.tip.remove();
+                }
+            }
+
+            document.addEventListener('mouseover', tipMethods);
+            document.addEventListener('mouseout', tipMethods)
+        });
+
+    </script>
+</body>
+
 </html>
