@@ -72,8 +72,8 @@
         <div class="wrap">
             <div id="products_box" class="products-box">
                 <ul id="products_list" class="products-list">
-                    <li class="products-list__item "><a href="##" class="products-list__link">Art</a>
-                        <ul class="products-sublist">
+                    <li class="products-list__item" data-show-submenu = "one"><a href="##" class="products-list__link">Art</a>
+                        <ul id="one" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
                                     <div class="products-content__image">
@@ -115,8 +115,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item "><a href="##" class="products-list__link">Home & Living</a>
-                        <ul class="products-sublist">
+                    <li class="products-list__item" data-show-submenu = "two"><a href="##" class="products-list__link">Home & Living</a>
+                        <ul id="two" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
                                     <div class="products-content__image">
@@ -158,8 +158,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item "><a href="##" class="products-list__link">Jewelry</a>
-                        <ul class="products-sublist">
+                    <li class="products-list__item" data-show-submenu = "three"><a href="##" class="products-list__link">Jewelry</a>
+                        <ul id="three" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
                                     <div class="products-content__image">
@@ -201,8 +201,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item "><a href="##" class="products-list__link">Women</a>
-                        <ul class="products-sublist">
+                    <li class="products-list__item" data-show-submenu = "four"><a href="##" class="products-list__link">Women</a>
+                        <ul id="four" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
                                     <div class="products-content__image">
@@ -244,8 +244,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item "><a href="##" class="products-list__link">Men</a>
-                        <ul class="products-sublist">
+                    <li class="products-list__item" data-show-submenu = "five"><a href="##" class="products-list__link">Men</a>
+                        <ul id="five" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
                                     <div class="products-content__image">
@@ -287,8 +287,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item "><a href="##" class="products-list__link">Kids</a>
-                        <ul class="products-sublist">
+                    <li class="products-list__item" data-show-submenu = "six"><a href="##" class="products-list__link">Kids</a>
+                        <ul id="six" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
                                     <div class="products-content__image">
@@ -330,8 +330,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item "><a href="##" class="products-list__link">Vintage</a>
-                        <ul class="products-sublist">
+                    <li class="products-list__item" data-show-submenu = "seven"><a href="##" class="products-list__link">Vintage</a>
+                        <ul id="seven" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
                                     <div class="products-content__image">
@@ -373,8 +373,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item "><a href="##" class="products-list__link">Weddings</a>
-                        <ul class="products-sublist">
+                    <li class="products-list__item" data-show-submenu = "eight"><a href="##" class="products-list__link">Weddings</a>
+                        <ul id="eight" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
                                     <div class="products-content__image">
@@ -416,8 +416,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item "><a href="##" class="products-list__link">More</a>
-                        <ul class="products-sublist">
+                    <li class="products-list__item" data-show-submenu = "ten"><a href="##" class="products-list__link">More</a>
+                        <ul id="ten" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
                                     <div class="products-content__image">
@@ -1017,7 +1017,8 @@
                 ]
             });
 
-            let tipMethods = {
+           let tipMethods = {
+
                 handleEvent(event) {
                     let elem = event.target.closest('[data-tip]');
                     if (!elem || elem.dataset.tip == null) return;
@@ -1029,7 +1030,7 @@
                     let coords = this.elem.getBoundingClientRect();
                     tip.textContent = this.elem.dataset.tip;
                     document.body.append(tip);
-                    tip.classList.add('tip');
+                    tip.classList.add(`tip`);
                     tip.style.top = pageYOffset + coords.top - tip.offsetHeight - 2 + 'px';
                     let left = pageXOffset + coords.left + this.elem.offsetWidth / 2 - tip.offsetWidth / 2;
                     tip.style.left = (left >= 0) ? left + 'px' : 0 + 'px';
@@ -1040,9 +1041,40 @@
                     this.tip.remove();
                 }
             }
-
             document.addEventListener('mouseover', tipMethods);
             document.addEventListener('mouseout', tipMethods)
+
+
+            let submenu = {
+                handleEvent(event) {
+                    let elem = event.target.closest('[data-show-submenu]');
+                    if (!elem) return;
+                    this.elem = elem;
+                    this.coords = this.elem.getBoundingClientRect();
+                    this[`${event.type}Menu`](event);
+                },
+                mouseoverMenu(event) {
+                    let submenu = document.querySelector(`#${this.elem.dataset.showSubmenu}`).cloneNode(true);
+                    document.body.append(submenu);
+                    submenu.classList.add('active');
+                    submenu.style.top = pageYOffset + this.coords.bottom - submenu.offsetHeight + 5 + 'px';
+                    let left = pageXOffset + this.coords.left + this.elem.offsetWidth / 2 - submenu.offsetWidth / 2;
+                    left = (left >= 0) ? left : 0;
+                    if (left + submenu.offsetWidth > document.documentElement.clientWidth) left = document.documentElement.clientWidth - submenu.offsetWidth - 10;
+
+                    submenu.style.left = (document.documentElement.clientWidth < 1230) ? left + 'px' : this.coords.left + 'px';
+                    
+
+                    this.submenu = submenu;
+                },
+                mouseoutMenu(event) {
+                    this.submenu.remove();
+                }
+            }
+
+            document.addEventListener('mouseover', submenu);
+            document.addEventListener('mouseout', submenu);
+
 
             showMenu.addEventListener('click', (event) => {
                 document.querySelector('.header-menu').classList.add('active');
