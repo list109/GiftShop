@@ -72,7 +72,8 @@
         <div class="wrap">
             <div id="products_box" class="products-box">
                 <ul id="products_list" class="products-list">
-                    <li class="products-list__item" data-show-submenu = "one"><a href="##" class="products-list__link">Art</a>
+                    <li class="products-list__item" data-show-submenu="one"><a href="##"
+                            class="products-list__link">Art</a>
                         <ul id="one" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
@@ -115,7 +116,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item" data-show-submenu = "two"><a href="##" class="products-list__link">Home & Living</a>
+                    <li class="products-list__item" data-show-submenu="two"><a href="##"
+                            class="products-list__link">Home & Living</a>
                         <ul id="two" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
@@ -158,7 +160,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item" data-show-submenu = "three"><a href="##" class="products-list__link">Jewelry</a>
+                    <li class="products-list__item" data-show-submenu="three"><a href="##"
+                            class="products-list__link">Jewelry</a>
                         <ul id="three" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
@@ -201,7 +204,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item" data-show-submenu = "four"><a href="##" class="products-list__link">Women</a>
+                    <li class="products-list__item" data-show-submenu="four"><a href="##"
+                            class="products-list__link">Women</a>
                         <ul id="four" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
@@ -244,7 +248,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item" data-show-submenu = "five"><a href="##" class="products-list__link">Men</a>
+                    <li class="products-list__item" data-show-submenu="five"><a href="##"
+                            class="products-list__link">Men</a>
                         <ul id="five" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
@@ -287,7 +292,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item" data-show-submenu = "six"><a href="##" class="products-list__link">Kids</a>
+                    <li class="products-list__item" data-show-submenu="six"><a href="##"
+                            class="products-list__link">Kids</a>
                         <ul id="six" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
@@ -330,7 +336,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item" data-show-submenu = "seven"><a href="##" class="products-list__link">Vintage</a>
+                    <li class="products-list__item" data-show-submenu="seven"><a href="##"
+                            class="products-list__link">Vintage</a>
                         <ul id="seven" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
@@ -373,7 +380,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item" data-show-submenu = "eight"><a href="##" class="products-list__link">Weddings</a>
+                    <li class="products-list__item" data-show-submenu="eight"><a href="##"
+                            class="products-list__link">Weddings</a>
                         <ul id="eight" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
@@ -416,7 +424,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="products-list__item" data-show-submenu = "ten"><a href="##" class="products-list__link">More</a>
+                    <li class="products-list__item" data-show-submenu="ten"><a href="##"
+                            class="products-list__link">More</a>
                         <ul id="ten" class="products-sublist">
                             <li class="products-sublist__item">
                                 <div class="products-content">
@@ -463,9 +472,11 @@
             </div>
         </div>
         <div class="products-arrows">
-            <buttom class="btn products-arrows__btn products-arrows__btn_prev" data-arrow="prevArrow"><i class="fas fa-caret-square-left"></i>
+            <buttom class="btn products-arrows__btn products-arrows__btn_prev" data-arrow="prevArrow"><i
+                    class="fas fa-caret-square-left"></i>
             </buttom>
-            <buttom class="btn products-arrows__btn products-arrows__btn_next" data-arrow="nextArrow"><i class="fas fa-caret-square-right"></i>
+            <buttom class="btn products-arrows__btn products-arrows__btn_next" data-arrow="nextArrow"><i
+                    class="fas fa-caret-square-right"></i>
             </buttom>
         </div>
     </nav>
@@ -1017,7 +1028,7 @@
                 ]
             });
 
-           let tipMethods = {
+            let tipMethods = {
 
                 handleEvent(event) {
                     let elem = event.target.closest('[data-tip]');
@@ -1063,11 +1074,17 @@
                     if (left + submenu.offsetWidth > document.documentElement.clientWidth) left = document.documentElement.clientWidth - submenu.offsetWidth - 10;
 
                     submenu.style.left = (document.documentElement.clientWidth < 1230) ? left + 'px' : this.coords.left + 'px';
-                    
+
 
                     this.submenu = submenu;
                 },
                 mouseoutMenu(event) {
+                    if (event.relatedTarget == this.submenu) {
+                        this.submenu.onmouseleave = () => {
+                            this.submenu.remove();
+                        };
+                        return;
+                    }
                     this.submenu.remove();
                 }
             }
@@ -1085,7 +1102,7 @@
 
             class Slider {
 
-                constructor(box, element, amount=200) {
+                constructor(box, element, amount = 200) {
                     this.amount = (document.documentElement.clientWidth < 370) ? 100 : amount;
                     this.box = box;
                     this.elem = element;
@@ -1097,7 +1114,7 @@
                 handleEvent(event) {
                     this.arrow = event.target.closest('.products-arrows__btn');
                     if (!this.arrow) return;
-                    if(this.arrow.dataset.arrow) this[this.arrow.dataset.arrow]();
+                    if (this.arrow.dataset.arrow) this[this.arrow.dataset.arrow]();
                 };
 
                 prevArrow() {
